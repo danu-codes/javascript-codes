@@ -28,5 +28,5 @@ console.log(maskEmail("info@test.dev"));
 console.log(maskEmail("user@domain.org"));         
 
 
-** end of script.js **
+//end of script.js
 
