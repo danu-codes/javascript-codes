@@ -1,4 +1,4 @@
-** start of script.js **
+//start of script.js 
 
 function maskEmail(email) {
  
