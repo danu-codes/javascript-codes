@@ -1,15 +1,15 @@
 //start of script.js
 
-    function fearNotLetter(str) {
-        let alphabeticalOrder = "abcdefghijklmnopqrstuvwxyz";
-        let startIndex = alphabeticalOrder.indexOf(str[0]);
-        for (let index = 0; index < str.length; index++) {
-            if (str[index] !== alphabeticalOrder[startIndex + index]) {
-                return alphabeticalOrder[startIndex + index];
-            }
+function fearNotLetter(str) {
+    let alphabeticalOrder = "abcdefghijklmnopqrstuvwxyz";
+    let startIndex = alphabeticalOrder.indexOf(str[0]);
+    for (let index = 0; index < str.length; index++) {
+        if (str[index] !== alphabeticalOrder[startIndex + index]) {
+            return alphabeticalOrder[startIndex + index];
         }
-        return undefined;
     }
+    return undefined;
+}
 
 //let result = fearNotLetter("abce");
 //let result = fearNotLetter("abcdefghjklmno");

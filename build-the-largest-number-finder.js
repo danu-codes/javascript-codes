@@ -1,17 +1,17 @@
 //start of script.js
 
-function largestOfAll(arr){
-   let maxArray=[];
-   for(let outter=0; outter<arr.length; outter++){
-      let max=arr[outter][0];
-      for(let inner=0; inner<arr[outter].length; inner++){
-        if(arr[outter][inner]>max){
-          max=arr[outter][inner];
-        }
+function largestOfAll(arr) {
+  let maxArray = [];
+  for (let outter = 0; outter < arr.length; outter++) {
+    let max = arr[outter][0];
+    for (let inner = 0; inner < arr[outter].length; inner++) {
+      if (arr[outter][inner] > max) {
+        max = arr[outter][inner];
       }
-      maxArray.push(max);
-   }
-   return maxArray;
+    }
+    maxArray.push(max);
+  }
+  return maxArray;
 }
 
 //const result = largestOfAll([[4, 5, 1, 3], [13, 27, 18, 26], [32, 35, 37, 39], [1000, 1001, 857, 1]]);

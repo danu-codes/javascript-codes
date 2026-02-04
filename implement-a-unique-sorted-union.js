@@ -1,8 +1,8 @@
 //start of script.js
 
-function uniteUnique(...arrays){
-   const combined=[].concat(...arrays);
-   return combined.filter((item, index)=>combined.indexOf(item)===index);
+function uniteUnique(...arrays) {
+   const combined = [].concat(...arrays);
+   return combined.filter((item, index) => combined.indexOf(item) === index);
 }
 
 console.log(uniteUnique([1, 3, 2], [5, 2, 1, 4], [2, 1]));

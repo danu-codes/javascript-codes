@@ -27,18 +27,19 @@ let contacts = [
   },
 ];
 
-function lookUpProfile(name, property){
-    for(let index=0; index<contacts.length; index++){
-      if(name === contacts[index].firstName){
-         if (contacts[index].hasOwnProperty(property)) {   
-          return contacts[index][property];}
-          else{
-            return "No such property";
-          }
+function lookUpProfile(name, property) {
+  for (let index = 0; index < contacts.length; index++) {
+    if (name === contacts[index].firstName) {
+      if (contacts[index].hasOwnProperty(property)) {
+        return contacts[index][property];
+      }
+      else {
+        return "No such property";
+      }
     }
   }
   return "No such contact";
-} 
+}
 
 //const result = lookUpProfile("Kristian", "lastName");
 //const result = lookUpProfile("Sherlock", "likes");

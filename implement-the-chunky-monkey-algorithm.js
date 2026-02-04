@@ -1,9 +1,9 @@
 //start of script.js
 
-function chunkArrayInGroups(arr, size){
-  let numArray=[];
-  for(let index=0; index<arr.length; index+=size){
-    numArray.push(arr.slice(index, index+size));
+function chunkArrayInGroups(arr, size) {
+  let numArray = [];
+  for (let index = 0; index < arr.length; index += size) {
+    numArray.push(arr.slice(index, index + size));
   }
   return numArray;
 }

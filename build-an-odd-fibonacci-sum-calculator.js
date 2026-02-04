@@ -1,18 +1,18 @@
 //start of script.js
 
-function sumFibs(num) { 
+function sumFibs(num) {
   let prev = 0;
   let current = 1;
-  let sumOfFibs = 0; 
-    while (current <= num) { 
-      if (current % 2 !== 0) { 
-        sumOfFibs += current; 
-    } 
-        let next = prev + current; 
-        prev = current; 
-        current = next;
-  } 
-         return sumOfFibs;
+  let sumOfFibs = 0;
+  while (current <= num) {
+    if (current % 2 !== 0) {
+      sumOfFibs += current;
+    }
+    let next = prev + current;
+    prev = current;
+    current = next;
+  }
+  return sumOfFibs;
 }
 
 console.log(sumFibs(1));

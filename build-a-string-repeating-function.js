@@ -1,16 +1,16 @@
 //start of script.js
 
-function repeatStringNumTimes(str, count){
-  let output="";
-    if(count<=0){
-       return "";
+function repeatStringNumTimes(str, count) {
+  let output = "";
+  if (count <= 0) {
+    return "";
+  }
+  else {
+    for (let times = 0; times < count; times++) {
+      output += str;
     }
-    else{
-      for(let times=0; times<count; times++){
-        output+= str;
-      }
-      return output;
-    }  
+    return output;
+  }
 }
 
 //const result = repeatStringNumTimes("*", 3);

@@ -1,15 +1,15 @@
 //start of script.js
 
-function bouncer(arr){
-  let result=[];
-  for(let index=0; index<arr.length; index++){
-    if(arr[index] === false || arr[index] === null ||arr[index] === 0 || arr[index] === "" || arr[index] === undefined || Number.isNaN(arr[index]))
+function bouncer(arr) {
+  let result = [];
+  for (let index = 0; index < arr.length; index++) {
+    if (arr[index] === false || arr[index] === null || arr[index] === 0 || arr[index] === "" || arr[index] === undefined || Number.isNaN(arr[index]))
       continue;
-    
+
     else
       result.push(arr[index]);
-    }
-    return result;
+  }
+  return result;
 }
 
 console.log(bouncer([7, "ate", "", false, 9]));

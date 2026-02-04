@@ -1,6 +1,6 @@
 //start of script.js
 
-function frankenSplice (arr1, arr2, arrLen){
+function frankenSplice(arr1, arr2, arrLen) {
     let result = arr2.slice();
 
     result.splice(arrLen, 0, ...arr1);

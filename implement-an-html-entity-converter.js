@@ -1,21 +1,21 @@
 //start of script.js 
 
-function convertHTML(str){
-  const list={
-    "&":"&amp;",
-    "<":"&lt;",
-    ">":"&gt;",
-    '"':"&quot;",
-    "'":"&apos;"
+function convertHTML(str) {
+  const list = {
+    "&": "&amp;",
+    "<": "&lt;",
+    ">": "&gt;",
+    '"': "&quot;",
+    "'": "&apos;"
   }
-  let result="";
-  for(let index=0; index<str.length; index++){
-    let char=str[index];
-    if(list[char]){
-      result+=list[char];
+  let result = "";
+  for (let index = 0; index < str.length; index++) {
+    let char = str[index];
+    if (list[char]) {
+      result += list[char];
     }
-    else{
-      result+=char;
+    else {
+      result += char;
     }
   }
   return result;

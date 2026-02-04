@@ -11,10 +11,10 @@ function sumAll(arr) {
   return sum;
 }
 
-console.log("Sum : "+sumAll([1, 4]));
-console.log("Sum : "+sumAll([4, 1]));
-console.log("Sum : "+sumAll([5, 10]));
-console.log("Sum : "+sumAll([10, 5]));
+console.log("Sum : " + sumAll([1, 4]));
+console.log("Sum : " + sumAll([4, 1]));
+console.log("Sum : " + sumAll([5, 10]));
+console.log("Sum : " + sumAll([10, 5]));
 
 
 

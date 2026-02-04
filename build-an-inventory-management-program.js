@@ -20,11 +20,11 @@ function addProduct(product) {
   let index = findProductIndex(lowerName);
 
   if (index !== -1) {
-    
+
     inventory[index].quantity += product.quantity;
     console.log(`${lowerName} quantity updated`);
   } else {
-   
+
     inventory.push({ name: lowerName, quantity: product.quantity });
     console.log(`${lowerName} added to inventory`);
   }
@@ -54,15 +54,15 @@ function removeProduct(productName, quantity) {
   }
 }
 
-addProduct({name: "flour", quantity: 20}); 
-addProduct({name: "rice", quantity: 5});
+addProduct({ name: "flour", quantity: 20 });
+addProduct({ name: "rice", quantity: 5 });
 
-console.log(findProductIndex("flour"));  
-console.log(findProductIndex("FloUr")); 
+console.log(findProductIndex("flour"));
+console.log(findProductIndex("FloUr"));
 console.log(findProductIndex("FlourX"));
 
-addProduct({name: "FLOUR", quantity: 5});
-addProduct({name: "sugar", quantity: 10});
+addProduct({ name: "FLOUR", quantity: 5 });
+addProduct({ name: "sugar", quantity: 10 });
 
 removeProduct("oil", 5);
 removeProduct("FLOUR", 5);

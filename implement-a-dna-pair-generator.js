@@ -1,7 +1,7 @@
 //start of script.js
 
 function pairElement(str) {
-  
+
   const pairs = {
     "A": "T",
     "T": "A",
