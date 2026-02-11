@@ -42,11 +42,9 @@ button {
   cursor: pointer;
   color: var(--white);
   background-color: var(--light-purple);
-  background-image: linear-gradient(
-    to bottom,
-    var(--very-light-purple),
-    var(--light-purple)
-  );
+  background-image: linear-gradient(to bottom,
+      var(--very-light-purple),
+      var(--light-purple));
   border: 3px solid var(--purple);
   border-radius: 8px;
   padding: 10px;
