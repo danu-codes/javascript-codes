@@ -34,10 +34,8 @@
 - Odd Fibonacci Sum Calculator  
 
 ### 🔹 DOM Practice (Coming Soon)
-- Event Handling  
-- Form Validation  
-- Dynamic Content Updates  
-- Interactive Mini Projects  
+- Emoji reactor
+- Storytelling app 
 
 ---
 
