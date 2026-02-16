@@ -1,0 +1,78 @@
+** start of index.html **
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Favorite Icon Toggler</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <h1>My Favorite Items</h1> <ul class="item-list"> <li> Coffee <button class="favorite-icon">&#9825;</button> </li> <li> Books <button class="favorite-icon">&#9825;</button> </li> <li> Music <button class="favorite-icon">&#9825;</button> </li> </ul> <script src="script.js"></script>
+  </body>
+</html>
+
+
+body {
+  font-family: "Segoe UI", sans-serif;
+  background: #f0f4f8;
+  padding: 40px;
+  text-align: center;
+}
+
+h1 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.item-list {
+  list-style: none;
+  padding: 0;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.item-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff;
+  margin: 12px 0;
+  padding: 12px 18px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.favorite-icon {
+  font-size: 22px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.filled {
+  color: crimson;
+  transform: scale(1.2);
+}
+
+
+
+
+const buttons = document.querySelectorAll('.favorite-icon');
+
+buttons.forEach(button => {
+  button.addEventListener('click', () => {
+    if (button.classList.contains('filled')) {
+      button.classList.remove('filled');
+      button.innerHTML = '&#9825;'; 
+    } else {
+      button.classList.add('filled');
+      button.innerHTML = '&#10084;'; 
+    }
+  });
+});
+
+
+
