@@ -1,0 +1,26 @@
+const textInput = document.getElementById("text-input");
+const charCount = document.getElementById("char-count");
+
+const maxLength = 50;
+
+textInput.addEventListener("input", function () {
+  let text = textInput.value;
+
+  // Trim extra characters
+  if (text.length > maxLength) {
+    text = text.substring(0, maxLength);
+    textInput.value = text;
+  }
+
+  const currentLength = text.length;
+
+  // Update counter text
+  charCount.textContent = `Character Count: ${currentLength}/${maxLength}`;
+
+  // Change color when exactly 50
+  if (currentLength === maxLength) {
+    charCount.style.color = "red";
+  } else {
+    charCount.style.color = "black";
+  }
+});
