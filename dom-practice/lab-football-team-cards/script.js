@@ -1,14 +1,14 @@
 const footballTeam = {
-  team: "Red Hawks FC",
-  year: 2026,
-  headCoach: "Alex Morgan",
-  players: [
-    { name: "David Silva", position: "forward", isCaptain: true },
-    { name: "Marcus Lee", position: "midfielder", isCaptain: false },
-    { name: "John Carter", position: "defender", isCaptain: false },
-    { name: "Samir Khan", position: "goalkeeper", isCaptain: false },
-    { name: "Luis Romero", position: "forward", isCaptain: false }
-  ]
+    team: "Red Hawks FC",
+    year: 2026,
+    headCoach: "Alex Morgan",
+    players: [
+        { name: "David Silva", position: "forward", isCaptain: true },
+        { name: "Marcus Lee", position: "midfielder", isCaptain: false },
+        { name: "John Carter", position: "defender", isCaptain: false },
+        { name: "Samir Khan", position: "goalkeeper", isCaptain: false },
+        { name: "Luis Romero", position: "forward", isCaptain: false }
+    ]
 };
 
 document.getElementById("team").textContent = footballTeam.team;
