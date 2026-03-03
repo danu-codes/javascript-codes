@@ -35,7 +35,8 @@
 
 ### 🔹 DOM Practice (Coming Soon)
 - Emoji reactor
-- Storytelling app 
+- Storytelling app
+- Note Taking App
 
 ---
 
