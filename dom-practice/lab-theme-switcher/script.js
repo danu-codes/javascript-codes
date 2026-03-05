@@ -31,3 +31,27 @@ button.addEventListener("click", () => {
         button.setAttribute("aria-expanded", "true");
     }
 });
+
+/* Theme Selection */
+menuItems.forEach(item => {
+  item.addEventListener("click", () => {
+    const selectedTheme = item.id.replace("theme-", "");
+
+    // Remove existing theme classes
+    document.body.className = "";
+
+    // Add new theme class
+    document.body.classList.add(`theme-${selectedTheme}`);
+
+    // Find matching theme object
+    const themeObject = themes.find(theme => theme.name === selectedTheme);
+
+    if (themeObject) {
+      messageElement.textContent = themeObject.message;
+    }
+
+    // Close dropdown
+    dropdown.setAttribute("hidden", "");
+    button.setAttribute("aria-expanded", "false");
+  });
+});
