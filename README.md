@@ -34,9 +34,17 @@
 - Odd Fibonacci Sum Calculator  
 
 ### 🔹 DOM Practice (Coming Soon)
-- Emoji reactor
-- Storytelling app
+- Favorite Icon Toggler
+- Lightbox Viewer
+- Music Instrument Filter
 - Note Taking App
+- Planets Tablist
+- Real Time Counter
+- Rock Paper Scissors Game
+- Storytelling App
+- Emoji Reactor
+- Football Team Cards
+- Theme Switcher
 
 ---
 
