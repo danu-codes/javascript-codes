@@ -45,6 +45,7 @@
 - Emoji Reactor
 - Football Team Cards
 - Theme Switcher
+- Random Background Color Changer
 
 ---
 
